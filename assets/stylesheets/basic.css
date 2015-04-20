@@ -1,0 +1,154 @@
+*{box-sizing: border-box;}
+
+/*-----------utilities-------------*/
+.clearFix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*-----------base-------------*/
+
+body{
+    margin: 0;
+    font-family: 'Helvetica Neue';
+    font-weight: lighter;
+  	overflow: inherit;
+  	min-height: 100%;
+  	background-color: whitesmoke;
+} 
+
+nav a{
+      text-decoration: none;
+      padding: 0.5em 1em;
+      color: inherit;
+      display: inline-block;}
+
+ul{
+  padding: 0;
+  list-style-type: none;
+  margin: 0 auto;}
+
+.panel-2 header{
+	min-width: 20em;}
+
+.button{
+        background-color:rgb(184, 173, 173);}
+
+.header{
+        background-image: url('../blackbyrd.jpg');
+      	background-size: cover;
+      	background-position: center;
+      	color: #D71D1D;
+      	min-height: 17em;
+      	text-align: center;
+      	overflow: hidden;}
+
+.header div{
+           width: 280px;
+           font-size: 1.5em;
+           margin: 0 auto;}	 
+
+/*-----------primary nav-------------*/
+
+.logo{
+	max-width: 40px;}
+
+.logo-2{
+	float: right;
+  margin: 6px 5px 6px 0;}
+
+.panel-1{
+  background-color:#888181;
+}
+
+.panel-1 h2{
+	margin: 6px 0 6px 5px;
+  float: right;}
+
+.panel-1 div{
+	display: none;}	 
+
+
+.panel-2 #container img{
+	width: 100%;
+}
+
+.primaryNav-toggle{
+	padding: 0.5em 0.66667em;
+	font-size: 1.5em;
+	color: white;
+	background-color: transparent;
+  text-decoration: none;
+  line-height: 52px;
+}
+
+
+/*---------------640px----------------*/
+
+@media (min-width: 640px){
+	.panel-1{
+          height: 53px;
+           padding: 0.4em;}
+
+	.panel-1 div, 
+  .panel-1 img, 
+  .panel-1 h2, 
+   nav ul li{float: left;}
+
+	.panel-1 div{
+             display: block;}
+
+	.header div{
+            margin:50px auto;}
+
+	.logo-2{
+          float: none;
+          width: 0;}
+	main{
+     min-width: 640px;
+	   padding: 1.5em 2em 1.5em 0.5em; }
+  
+  .panel-2 ul{
+      max-width: 760px;}
+	
+  nav a{
+      padding: 0.59em 0.5em;}	
+	
+  .panel-1 nav{
+	          margin: 0 auto;}
+ 
+  .panel-1 ul{
+           float: right;}
+ 
+  .button{
+     visibility: hidden;
+     height: 0;}
+}
+
+
+/*-------700px----*/
+
+@media (min-width: 700px){
+    .header div h1{font-size: 60px;}
+}
+@media (max-width: 700px){
+    .panel-1 ul li{text-align: center;}
+  }
+/*-------855px------*/
+
+@media (min-width: 855px){
+     h1{width: 50%;
+        margin: 0 auto;}
+    .header div{margin: 75px auto;
+                width: 100%;}
+}
+
+/*---------------940px---------------*/
+
+@media (min-width: 940px){
+  .panel-1 nav, .panel-2 ul{max-width:940px;}
+	.header div{margin: 60px auto;
+	           width: 100%;}  
+	
+}

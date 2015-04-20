@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--  THIS META TAG IS IMPORTANT TO HAVE IN ORDER TO MAKE THE SITE RESPONSIVE-->
+   <meta name="viewport" content="width=device-width, initial-scale=1, user-capable=no"> 
+   <!-- CONNECTING TO STYLESHEETS-->
+   <link rel="stylesheet" type="text/css" href="assets/stylesheets/basic.css" />
+   
+</head>
+
+<body>
+ <!-- THE NAVIGATION WILL GO IN PANEL-1 -->
+ <div class="panel-1" id="nav">
+  <nav>
+    <div> <!--- LOGO -->
+      <img class="logo logo-1" src="assets/blackbyrdlog.jpg">  
+      <h2>Record Store</h2>
+    </div>
+    
+    <ul> <!--- NAVIGATION -->
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Services</a></li>
+    </ul>
+  <nav>
+ </div>
+ 
+<!-- THE REST OF THE CONTENT GOES INTO PANEL-2 -->
+ <div class="panel-2">
+     
+     <header>
+        
+        <section class="button">
+         
+          <a href="#nav" class="primaryNav-toggle" id="toggle" >=</a>
+          <img class="logo logo-2" src="assets/blackbyrdlog.jpg"> 
+        
+        </section>
+        
+        <section class="header">
+     
+          <div>
+          
+             <h1>Blackbyrd Myoozik</h1>
+             <p>Awesome Place for Getting Awesome Music</p>
+          
+          </div>
+
+     </section>
+
+    </header> 
+ </div>
+  <!-- CONNECT TO THE JAVASCRIPT FILE -->
+  <!-- CALL THE FUNCTION TO TOGGLE MENU -->
+  <script>
+       var navigation = responsiveNav("#nav", {customToggle: "#toggle"});
+  </script>
+</body>
+</html>
